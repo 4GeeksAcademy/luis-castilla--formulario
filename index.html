@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https: //fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100; 1,300;1,400;1,500;1,700;1,900&display=swap" rel="hoja de estilo">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="bg-black">
+    <div class="container-fluid w-75 p-3 bg-white text-dark">
+        <form class="m-5 fw-medium fs-5">
+            <div class="titulo border border-2 p-3 bg-body-tertiary border border-bottom-0 rounded-top">
+                <h1 class="fs-2 fw-bold">Payment form example</h1>
+            </div>
+            <div class="border border-2 p-4">
+                <div>
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div class="mb-3 w-100">
+                            <label for="formGroupExampleInput" class="form-label fw-medium">Card #</label>
+                            <input type="number" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXXXXXXX">
+                        </div>
+                        <div class="mb-3 w-50 ms-5">
+                            <label for="formGroupExampleInput" class="form-label fw-medium">CVC #</label>
+                            <input type="number" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" id="formGroupExampleInput" placeholder="0000">      <!--me falta colocarle maximo de 4 caracteres -->
+                        </div>
+                        <div class="mb-3 w-75 ms-5">
+                            <label for="formGroupExampleInput" class="form-label fw-medium">Amount</label>
+                            <span>$</span> <input type="text" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" placeholder="Amount" id="formGroupExampleInput" aria-label="Amount (to the nearest dollar)">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-inline-flex w-100">
+                    <div class="w-100">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fw-medium">First Name</label>
+                            <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1">
+                        </div>                                                                                      <!-- necesito cambiar los id -->
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fw-medium">City</label>
+                            <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1">
+                        </div>
+                        <div>
+                            <h5 class="mb-3">We acepted:</h5>
+                            <div class="d-inline-flex border bg-secondary p-2 rounded">
+                                <div class="form-check me-2">
+                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-diners-club"></i>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-paypal"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 ms-5" >
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label fw-medium">Last Name</label>
+                            <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1">
+                        </div>
+                        <div class="d-inline-flex w-100" >
+                            <div class="w-100 border border-0">
+                                <label for="exampleInputPassword1" class="form-label fw-medium ">State</label>
+                                <select class="form-select w-100 border border-2 fw-medium fs-5 text-secondary-emphasis" aria-label="Default select example" id="exampleInputPassword1">
+                                <option selected>Pick a state</option>
+                                <option value="1">Madrid</option>
+                                <option value="2">Barcelona</option>
+                                <option value="3">Valencia</option>
+                            </select>
+                            </div>
+                            <div class="mb-3 w-100 ms-5">
+                                <label for="formGroupExampleInput" class="form-label fw-medium">Postal Code</label>
+                                <input type="number" class="form-control border border-2 fs-5" id="formGroupExampleInput">      <!--me falta colocarle maximo de 4 caracteres -->
+                            </div>
+                        </div>
+                        <div>
+                            <label for="floatingTextarea2" class="fw-medium mb-2"> Message</label>
+                            <textarea class="form-control border border-2" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <p class="text-body-tertiary fs-6">Add any notes here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 p-3 bg-body-tertiary d-flex justify-content-end border border-top-0 rounded-bottom">
+                <button type="button" class="btn btn-secondary fw-medium fs-4">Cancel</button>
+                <button type="button" class="btn btn-primary ms-2 fw-medium fs-4">Send</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
