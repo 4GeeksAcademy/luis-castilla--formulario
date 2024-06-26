@@ -19,102 +19,83 @@
                     <div class="alert alert-danger" role="alert">
                         Some fields are missing
                     </div>
-                    <div class="d-flex justify-content-around">
-                        <div class="mb-3 w-100">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-5 col-lg-5">
                             <label for="formGroupExampleInput" class="form-label fw-medium">Card #</label>
                             <input type="number" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXXXXXXX" required >
-                            <div class="invalid-feedback">
-                                Enter card number
-                            </div>
                         </div>
-                        <div class="mb-3 w-50 ms-5">
+                        <div class="col-sm-12 col-md-3 col-lg-3">
                             <label for="formGroupExampleInput" class="form-label fw-medium">CVC #</label>
-                            <input type="number" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" id="formGroupExampleInput" placeholder="0000" required > 
-                            <div class="invalid-feedback">
-                                Enter security code
-                            </div>    
+                            <input type="number" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" id="formGroupExampleInput" placeholder="0000" required >     
                         </div>
-                        <div class="mb-3 w-75 ms-5">
+                        <div class="col-sm-12 col-md-4 col-lg-4">
                             <label for="formGroupExampleInput" class="form-label fw-medium">Amount</label>
                             <span>$</span> <input type="text" class="form-control border border-2 fw-medium fs-5 text-body-tertiary" placeholder="Amount" id="formGroupExampleInput" aria-label="Amount (to the nearest dollar)" required >
-                            <div class="invalid-feedback">
-                                Enter the amount to send
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-inline-flex w-100">
-                    <div class="w-100">
-                        <div class="mb-3">
+                <div class="row col-ms-12 col-md-12 col-lg-12">
+                    <div class="col-ms-12 col-md-6 col-lg-6">
+                        <div class="col-ms-12 col-md-12 col-lg-12">
                             <label for="exampleInputPassword1" class="form-label fw-medium">First Name</label>
                             <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1" required >
-                            <div class="invalid-feedback">
-                                Enter your name
-                            </div> 
                         </div>                                                                                      
-                        <div class="mb-3">
+                        <div class="col-ms-12 col-md-12 col-lg-12">
                             <label for="exampleInputPassword1" class="form-label fw-medium">City</label>
                             <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1" required >
-                            <div class="invalid-feedback">
-                                Enter city of residence
-                            </div> 
                         </div>
-                        <div>
-                            <h5 class="mb-3">We acepted:</h5>
-                            <div class="d-inline-flex border bg-secondary p-2 rounded">
-                                <div class="form-check me-2">
-                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
-                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-mastercard"></i>
-                                    </label>
+                        <div class="row col-ms-12 col-md-12 col-lg-12" >
+                            <div class="col-ms-12 col-md-6 col-lg-6" >
+                                <h5 class="mb-4">We acepted:</h5>
+                                <div class="d-inline-flex bg-secondary p-2 rounded">
+                                    <div class="form-check me-2">
+                                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
+                                        <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-mastercard"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check me-2">
+                                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
+                                        <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-visa"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check me-2">
+                                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
+                                        <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-diners-club"></i>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
+                                        <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-paypal"></i>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
-                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-visa"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
-                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-diners-club"></i>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input fs-6" type="radio" name="flexRadioDefault" id="flexRadioDefault1" required >
-                                    <label class="form-check-label" for="flexRadioDefault1"><i class="fa-brands fa-cc-paypal"></i>
-                                    </label>
-                                </div>
+                            </div>
+                            <div class="col-ms-12 col-md-6 col-lg-6" >
+                                 
                             </div>
                         </div>
                     </div>
-                    <div class="w-100 ms-5" >
-                        <div class="mb-3">
+                    <div class="col-ms-12 col-md-6 col-lg-6" >
+                        <div class="col-ms-12 col-md-12 col-lg-12">
                             <label for="exampleInputPassword1" class="form-label fw-medium">Last Name</label>
                             <input type="text" class="form-control border border-2 fs-5" id="exampleInputPassword1" required >
-                            <div class="invalid-feedback">
-                                Enter your last name
-                            </div> 
                         </div>
-                        <div class="d-inline-flex w-100" >
-                            <div class="w-100 border border-0">
+                        <div class="row col-ms-12 col-md-12 col-lg-12 pe-0" >
+                            <div class="col-ms-12 col-md-12 col-lg-6 pe-0">
                                 <label for="exampleInputPassword1" class="form-label fw-medium ">State</label>
-                                <select class="form-select w-100 border border-2 fw-medium fs-5 text-secondary-emphasis is-invalid" aria-label="Default select example" id="exampleInputPassword1" required >
+                                <select class="form-select border border-2 fw-medium fs-5 text-secondary-emphasis is-invalid" aria-label="Default select example" id="exampleInputPassword1" required >
                                 <option selected>Pick a state</option>
                                 <option value="1">Madrid</option>
                                 <option value="2">Barcelona</option>
                                 <option value="3">Valencia</option>
                             </select>
-                            <div class="invalid-feedback">
-                                Please select a valid state.
                             </div>
-                            </div>
-                            <div class="mb-3 w-100 ms-5">
+                            <div class="col-ms-12 col-md-12 col-lg-6 pe-0">
                                 <label for="formGroupExampleInput" class="form-label fw-medium">Postal Code</label>
-                                <input type="number" class="form-control border border-2 fs-5" id="formGroupExampleInput" required > 
-                                <div class="invalid-feedback">
-                                    Enter zip code
-                                </div>      
+                                <input type="number" class="form-control border border-2 fs-5" id="formGroupExampleInput" required >     
                             </div>
                         </div>
-                        <div>
+                        <div class="col-ms-12 col-md-12 col-lg-12" >
                             <label for="floatingTextarea2" class="fw-medium mb-2"> Message</label>
                             <textarea class="form-control border border-2" id="floatingTextarea2" style="height: 100px"></textarea>
                             <p class="text-body-tertiary fs-6">Add any notes here.</p>
@@ -124,7 +105,7 @@
             </div>
             <div class="border-2 p-3 bg-body-tertiary d-flex justify-content-end border border-top-0 rounded-bottom">
                 <button type="button" class="btn btn-secondary fw-medium fs-4">Cancel</button>
-                <button type="button" class="btn btn-primary ms-2 fw-medium fs-4">Send</button>
+                <button type="submit" class="btn btn-primary ms-2 fw-medium fs-4">Send</button>
             </div>
         </form>
     </div>
